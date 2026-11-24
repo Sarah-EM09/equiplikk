@@ -10,17 +10,17 @@ import src.service.BorrowRequestService;
 import src.service.EquipmentService;
 import src.service.NotificationService;
 import src.ui.AppTheme;
-import src.ui.BorrowingHistoryPanel;
-import src.ui.DashboardPanel;
-import src.ui.EquipmentInventoryPanel;
-import src.ui.EquipmentRequestPanel;
-import src.ui.PasswordResetRequestsPanel;
-import src.ui.MyRequestsPanel;
-import src.ui.NotificationsPanel;
-import src.ui.PasswordChangeDialog;
-import src.ui.RequestQueuePanel;
-import src.ui.SettingsPanel;
-import src.ui.UserManagementPanel;
+import src.ui.requests.BorrowingHistoryPanel;
+import src.ui.dashboard.DashboardPanel;
+import src.ui.equipment.EquipmentInventoryPanel;
+import src.ui.requests.EquipmentRequestPanel;
+import src.ui.account.PasswordResetRequestsPanel;
+import src.ui.requests.MyRequestsPanel;
+import src.ui.notifications.NotificationsPanel;
+import src.ui.auth.PasswordChangeDialog;
+import src.ui.requests.RequestQueuePanel;
+import src.ui.account.SettingsPanel;
+import src.ui.account.UserManagementPanel;
 import src.ui.UiSupport;
 import src.ui.components.NavigationButton;
 import src.ui.components.PrimaryButton;
@@ -42,7 +42,7 @@ import java.awt.GridLayout;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class MainLayout extends MainLayoutPart2 {
+public class MainLayout extends MainLayoutNavigation {
 
         public MainLayout(User user, AuthController authController) {
                 this(user, authController,

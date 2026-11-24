@@ -12,7 +12,7 @@ import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AuthService extends AuthServicePart2 {
+public class AuthService extends AuthServiceAdminActions {
 
             public void reviewPasswordReset(
                     String actorRole,

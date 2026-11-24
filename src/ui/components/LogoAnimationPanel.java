@@ -27,7 +27,7 @@ import java.nio.file.Path;
  * You can also bake this animation into a sprite sheet PNG:
  *   LogoAnimationPanel.exportSpriteSheet(new File("logo_sheet.png"), 384, 256, 30, 8);
  */
-public class LogoAnimationPanel extends LogoAnimationPanelPart1 {
+public class LogoAnimationPanel extends LogoAnimationRenderer {
 
     public LogoAnimationPanel() {
         setPreferredSize(new Dimension(768, 512));

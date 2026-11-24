@@ -33,7 +33,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
-public class BorrowRequestService extends BorrowRequestServicePart7 {
+public class BorrowRequestService extends BorrowRequestCreation {
 
     public List<BorrowRequest> findActiveRequests(long borrowerId) throws SQLException {
         return findRequests(

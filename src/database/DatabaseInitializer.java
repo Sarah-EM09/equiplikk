@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
-public final class DatabaseInitializer extends DatabaseInitializerPart1 {
+public final class DatabaseInitializer extends DatabaseSchemaSql {
 
     DatabaseInitializer() {
         // Prevent object instantiation.
